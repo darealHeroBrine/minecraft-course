@@ -1,0 +1,29 @@
+#config version
+Version: 0.5
+#the name of the server the plugin would use.
+Servername: "MyServer"
+#FreeOP wether to give op to any who joins the server
+FreeOP:
+  #keep lowercase
+  enabled: false
+  #permission to get op wether FreeOp is enabled or not
+  permission: McPp.op
+# Enables Debuging (Spams condole could cause log crash)
+Debug: false
+#welcome message. there are three thing needed to make this work#
+Welcome-msg:
+  #This needs to be enabled for the message to even show up. Default: true#
+  Enabled: true
+  #the message details the player would receive#
+  Message:
+    #The message itself that will be sent to the player#
+    #placeholders %player% returns player name. %servername% will return the name of the server
+    Text: "Welcome %player% to"
+    #How the message will be delivered. Type: Title, ActionBar Default: Title#
+    Type: "Title"
+    sub-msg:
+      #the message sub message that shows underneath the main title bar#
+      #placeholders %player% returns player name. %servername% will return the name of the server
+      #Set to None to disable
+      Text: "%servername%"
+

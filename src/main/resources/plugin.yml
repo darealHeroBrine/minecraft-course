@@ -1,0 +1,12 @@
+name: guitesting
+version: '${project.version}'
+main: me.brian.guitesting.Guitesting
+api-version: 1.17
+prefix: GUIs
+authors: [Brian]
+description: I am learning from a course on udemy. If you want to try this plugin out go ahead. If you want to use the plugin as a learning tool please grab the plugin.decompiled.jar to do so.
+commands:
+  menu:
+    description: opens test menu.
+  Nuker:
+  Creep:
