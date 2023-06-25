@@ -23,8 +23,9 @@ public class MenuListener implements Listener {
                     player.sendMessage("not available yet!");
                     break;
                 case 15:// whitelisting
+                    player.closeInventory();
                     player.openInventory(new TestMenu().guiCreation());
-                    break;
+                    return;
                 default:
                     return;
             }
